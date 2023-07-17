@@ -9,7 +9,7 @@ This is a one-page website I made to practice using HTML and CSS, I decided to g
 This was practice using bootstrap 4 assests to create a movie theater website
 
 # Portfolio Website
-This is a copy of what is included in my portfolio repository, and is my initial draft of my portfolio website which is live [here](http://nicolassloan.com/)
+This is a copy of what is included in my portfolio repository, and is my initial draft of my portfolio website which is live [here](https://nicolassloan.com/)
 
 # Miscellaneous
 The rest of this repository is miscellaneous practice using HTML and CSS together, and a small bit of Javascript. It's mostly incomplete webpages that were used to test only a few elements at a time.

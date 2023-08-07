@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dogs!!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+		<!-- NAV -->
+		<div>
+			<nav>
+				<a href="#home">HOME</a> |
+				<a href="#pictures">PICTURES</a> |
+				<a href="#videos">VIDEOS</a> |
+				<a href="#contact">CONTACT</a>
+			</nav>
+		</div>
+		<!-- End NAV -->
+		
+		<!-- Home -->
+		<div id="home">
+			<h1>This is my one-page website about dogs!</h1>
+			<p>In this website I'm going to show off lots of different breeds of dogs!</p>
+		</div>
+		<!-- End Home -->
+	
+	
+	
+		<!-- Pictures -->
+		<div class="row">
+			<h3>Here is a gallery of dog pictures!</h3>
+			<div class="column">
+				<img src="./pictures/small_dog_1.jpg" onclick="openModal();currentSlide(1)" 
+				class="hover-shadow" alt="">
+			</div>
+			<div class="column">	
+				<img src="./pictures/small_dog_2.jpg" onclick="openModal();currentSlide(2)" 
+				class="hover-shadow" alt="">
+			</div>
+			<div class="column">	
+				<img src="./pictures/small_dog_3.jpg" onclick="openModal();currentSlide(3)" 
+				class="hover-shadow" alt="">
+			</div>
+			<div class="column">	
+				<img src="./pictures/small_dog_4.jpg" onclick="openModal();currentSlide(4)" 
+				class="hover-shadow" alt="">
+			</div>
+			
+		</div>
+		<!-- End Pictures -->
+
+
+		<!--Modal/Lightbox-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 44</div>
+					<img src="./pictures/dog_1.jpg" style="width: 100%;" alt="">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./pictures/dog_2.jpg" style="width: 100%;" alt="">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./pictures/dog_3.jpg" style="width: 100%;" alt="">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./pictures/dog_4.jpg" style="width: 100%;" alt="">
+				</div>
+
+				</div>
+
+				<!--next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!--caption text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!--thumbnail image controls-->
+				<div class="column">
+					<img class="demo" src="./pictures/small_dog_1.jpg" onclick="currentSlide(1)" alt="Dog 1">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./pictures/small_dog_2.jpg" onclick="currentSlide(2)" alt="Dog 2">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./pictures/small_dog_3.jpg" onclick="currentSlide(3)" alt="Dog 3">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./pictures/small_dog_4.jpg" onclick="currentSlide(4)" alt="Dog 4">
+				</div>
+
+			</div>
+		</div>
+		<!--end lightbox-->
+		<br>
+		
+		<!-- Videos -->
+		<section id="videos">
+			<iframe width ="1080" height="720"
+			src="https://www.youtube.com/embed/MPV2METPeJU" title="The Best Dogs of BBC Earth">
+			</iframe>
+		</section>
+		<!-- End Videos -->
+	
+	
+	
+		<!-- Contact -->
+		<div id="contact">
+			<p>Want to stay in the loop about dogs? Sign up below!</p>
+			<form action="" method="post">
+				<input class="contact" type="text" value="" placeholder="First Name"><br>
+				<input class="contact" type="text" value="" placeholder="Last Name"><br>
+				<input class="contact" type="text" value="" placeholder="Email"><br>
+				<input class="contact" type="text" value="" placeholder="Phone Number"><br>
+			</form>
+		</div>
+		<!-- End Contact -->
+		
+	
+	
+		<!-- Footer -->
+		<footer>
+			<p>Website Author: Nicolas Sloan</p>
+		</footer>
+		<!-- End Footer -->
+	
+	</body>
+</html>
